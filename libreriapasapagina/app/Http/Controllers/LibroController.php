@@ -56,6 +56,13 @@ class LibroController extends Controller
     }
 
     /**
+     * Confirm the delete of the object
+     */
+    public function confirmDestroy(Libro $libro){
+        
+    }
+
+    /**
      * Remove the specified resource from storage.
      */
     public function destroy(Libro $libro)
