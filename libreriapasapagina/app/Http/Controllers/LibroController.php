@@ -63,7 +63,8 @@ class LibroController extends Controller
      * Confirm the delete of the object
      */
     public function confirmDestroy(Libro $libro){
-        
+        //
+        return view('libro.confirmDestroy', compact('libro'));
     }
 
     /**
@@ -72,5 +73,10 @@ class LibroController extends Controller
     public function destroy(Libro $libro)
     {
         //
+        $libro -> delete();
+        return redirect()
+            ->route('libro.index')
+            ->with('success', 'Libro borrado correctamente')
+        ;
     }
 }
