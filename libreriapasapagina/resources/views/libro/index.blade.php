@@ -1,3 +1,8 @@
+@if(session('success'))
+    <div>
+        {{session('success')}}
+    </div>
+@endif
 <h1>Listado de libros</h1>
 <table>
     <tr>
@@ -10,7 +15,7 @@
         <td><a href="{{route('libro.show', $libro)}}">{{$libro->titulo}}</td>
         <td>{{$libro->precio}}</td>
         <td>Editar</td>
-        <td>Borrar</td>
+        <td><a href="{{route('libro.confirmDestroy', $libro)}}">Borrar</a></td>
     </tr>
     @endforeach
 </table>
