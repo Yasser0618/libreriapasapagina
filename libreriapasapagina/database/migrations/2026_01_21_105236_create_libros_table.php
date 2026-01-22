@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('autor');
-            $table->number('paginas');
+            $table->integer('paginas');
             $table->decimal('precio', 4, 2);
             $table->timestamps();
         });

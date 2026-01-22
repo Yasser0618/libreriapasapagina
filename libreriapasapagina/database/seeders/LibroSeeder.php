@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Libro;
 
-class Libros extends Seeder
+class LibroSeeder extends Seeder
 {
     /**
      * Run the database seeds.
