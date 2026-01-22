@@ -7,7 +7,7 @@
     </tr>
     @foreach ($libros as $libro)
     <tr>
-        <td><a href="{{route('libro.show', $libro->id)}}">{{$libro->titulo}}</td>
+        <td><a href="{{route('libro.show', $libro)}}">{{$libro->titulo}}</td>
         <td>{{$libro->precio}}</td>
         <td>Editar</td>
         <td>Borrar</td>
